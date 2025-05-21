@@ -1,0 +1,33 @@
+nohup: ignoring input
+2024-12-17 03:29:29.654083: I tensorflow/core/util/port.cc:113] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2024-12-17 03:29:29.702319: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2024-12-17 03:29:30.499003: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+Traceback (most recent call last):
+  File "/home/admincit/DoRA-LoRA/live.py", line 6, in <module>
+    processor = AutoProcessor.from_pretrained("./BLIP_finetuned_dora_r16/checkpoint_26")
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admincit/miniconda3/lib/python3.11/site-packages/transformers/models/auto/processing_auto.py", line 321, in from_pretrained
+    return processor_class.from_pretrained(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admincit/miniconda3/lib/python3.11/site-packages/transformers/processing_utils.py", line 892, in from_pretrained
+    args = cls._get_arguments_from_pretrained(pretrained_model_name_or_path, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admincit/miniconda3/lib/python3.11/site-packages/transformers/processing_utils.py", line 938, in _get_arguments_from_pretrained
+    args.append(attribute_class.from_pretrained(pretrained_model_name_or_path, **kwargs))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admincit/miniconda3/lib/python3.11/site-packages/transformers/models/auto/tokenization_auto.py", line 897, in from_pretrained
+    return tokenizer_class.from_pretrained(pretrained_model_name_or_path, *inputs, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admincit/miniconda3/lib/python3.11/site-packages/transformers/tokenization_utils_base.py", line 2271, in from_pretrained
+    return cls._from_pretrained(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admincit/miniconda3/lib/python3.11/site-packages/transformers/tokenization_utils_base.py", line 2505, in _from_pretrained
+    tokenizer = cls(*init_inputs, **init_kwargs)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admincit/miniconda3/lib/python3.11/site-packages/transformers/models/gpt2/tokenization_gpt2_fast.py", line 99, in __init__
+    super().__init__(
+  File "/home/admincit/miniconda3/lib/python3.11/site-packages/transformers/tokenization_utils_fast.py", line 115, in __init__
+    fast_tokenizer = TokenizerFast.from_file(fast_tokenizer_file)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Exception: data did not match any variant of untagged enum ModelWrapper at line 250380 column 3

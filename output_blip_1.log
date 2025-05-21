@@ -1,0 +1,688 @@
+nohup: ignoring input
+The `load_in_4bit` and `load_in_8bit` arguments are deprecated and will be removed in the future versions. Please, pass a `BitsAndBytesConfig` object in `quantization_config` argument instead.
+Label: 0, Image: <PIL.JpegImagePlugin.JpegImageFile image mode=RGB size=224x224 at 0x74C836F78FD0>
+Label: 0, Image: <PIL.JpegImagePlugin.JpegImageFile image mode=RGB size=224x224 at 0x74C8345BACD0>
+Label: 0, Image: <PIL.JpegImagePlugin.JpegImageFile image mode=RGB size=224x224 at 0x74C8345BB050>
+Label: 0, Image: <PIL.JpegImagePlugin.JpegImageFile image mode=RGB size=224x224 at 0x74C8345BB610>
+Label: 1, Image: <PIL.JpegImagePlugin.JpegImageFile image mode=RGB size=224x224 at 0x74C820985910>
+Label: 1, Image: <PIL.JpegImagePlugin.JpegImageFile image mode=RGB size=224x224 at 0x74C820985E90>
+Label: 1, Image: <PIL.JpegImagePlugin.JpegImageFile image mode=RGB size=224x224 at 0x74C820986410>
+Label: 1, Image: <PIL.JpegImagePlugin.JpegImageFile image mode=RGB size=224x224 at 0x74C820986990>
+Label: 2, Image: <PIL.JpegImagePlugin.JpegImageFile image mode=RGB size=224x224 at 0x74C810D49DD0>
+Label: 2, Image: <PIL.JpegImagePlugin.JpegImageFile image mode=RGB size=224x224 at 0x74C810D4A350>
+Label: 2, Image: <PIL.JpegImagePlugin.JpegImageFile image mode=RGB size=224x224 at 0x74C810D4A8D0>
+Label: 2, Image: <PIL.JpegImagePlugin.JpegImageFile image mode=RGB size=224x224 at 0x74C810D4AE50>
+Label: 3, Image: <PIL.JpegImagePlugin.JpegImageFile image mode=RGB size=224x224 at 0x74C80110A010>
+Label: 3, Image: <PIL.JpegImagePlugin.JpegImageFile image mode=RGB size=224x224 at 0x74C80110A590>
+Label: 3, Image: <PIL.JpegImagePlugin.JpegImageFile image mode=RGB size=224x224 at 0x74C80110AB10>
+Label: 3, Image: <PIL.JpegImagePlugin.JpegImageFile image mode=RGB size=224x224 at 0x74C80110B090>
+Label: 4, Image: <PIL.JpegImagePlugin.JpegImageFile image mode=RGB size=224x224 at 0x74C7F9339B50>
+Label: 4, Image: <PIL.JpegImagePlugin.JpegImageFile image mode=RGB size=224x224 at 0x74C7F933A0D0>
+Label: 4, Image: <PIL.JpegImagePlugin.JpegImageFile image mode=RGB size=224x224 at 0x74C7F933A650>
+Label: 4, Image: <PIL.JpegImagePlugin.JpegImageFile image mode=RGB size=224x224 at 0x74C7F933ABD0>
+Label: 5, Image: <PIL.JpegImagePlugin.JpegImageFile image mode=RGB size=224x224 at 0x74C7E9DF5E10>
+Label: 5, Image: <PIL.JpegImagePlugin.JpegImageFile image mode=RGB size=224x224 at 0x74C7E9DF6390>
+Label: 5, Image: <PIL.JpegImagePlugin.JpegImageFile image mode=RGB size=224x224 at 0x74C7E9DF6910>
+Label: 5, Image: <PIL.JpegImagePlugin.JpegImageFile image mode=RGB size=224x224 at 0x74C7E9DF6E90>
+Label: 6, Image: <PIL.JpegImagePlugin.JpegImageFile image mode=RGB size=224x224 at 0x74C7E40BE0D0>
+Label: 6, Image: <PIL.JpegImagePlugin.JpegImageFile image mode=RGB size=224x224 at 0x74C7E40BE650>
+Label: 6, Image: <PIL.JpegImagePlugin.JpegImageFile image mode=RGB size=224x224 at 0x74C7E40BEBD0>
+Label: 6, Image: <PIL.JpegImagePlugin.JpegImageFile image mode=RGB size=224x224 at 0x74C7E40BF150>
+Label: 7, Image: <PIL.JpegImagePlugin.JpegImageFile image mode=RGB size=224x224 at 0x74C7DE282390>
+Label: 7, Image: <PIL.JpegImagePlugin.JpegImageFile image mode=RGB size=224x224 at 0x74C7DE282910>
+Label: 7, Image: <PIL.JpegImagePlugin.JpegImageFile image mode=RGB size=224x224 at 0x74C7DE282E90>
+Label: 7, Image: <PIL.JpegImagePlugin.JpegImageFile image mode=RGB size=224x224 at 0x74C7DE283410>
+Loading checkpoint shards:   0%|          | 0/8 [00:00<?, ?it/s]Loading checkpoint shards:  12%|█▎        | 1/8 [00:00<00:03,  2.04it/s]Loading checkpoint shards:  25%|██▌       | 2/8 [00:00<00:02,  2.05it/s]Loading checkpoint shards:  38%|███▊      | 3/8 [00:01<00:02,  2.07it/s]Loading checkpoint shards:  50%|█████     | 4/8 [00:01<00:01,  2.14it/s]Loading checkpoint shards:  62%|██████▎   | 5/8 [00:02<00:01,  2.18it/s]Loading checkpoint shards:  75%|███████▌  | 6/8 [00:02<00:00,  2.21it/s]Loading checkpoint shards:  88%|████████▊ | 7/8 [00:03<00:00,  2.24it/s]Loading checkpoint shards: 100%|██████████| 8/8 [00:03<00:00,  2.42it/s]Loading checkpoint shards: 100%|██████████| 8/8 [00:03<00:00,  2.25it/s]
+Expanding inputs for image tokens in BLIP-2 should be done in processing. Please follow instruction here (https://gist.github.com/zucchini-nlp/e9f20b054fa322f84ac9311d9ab67042) to update your BLIP-2 model. Using processors without these attributes in the config is deprecated and will throw an error in v4.47.
+trainable params: 5,406,720 || all params: 3,750,086,656 || trainable%: 0.1442
+Epoch: 0
+Loss: 3.91015625
+Loss: 3.205078125
+Loss: 2.919921875
+Loss: 3.08203125
+Loss: 2.853515625
+Loss: 2.6484375
+Loss: 2.12109375
+Loss: 2.31640625
+Loss: 2.162109375
+Loss: 2.271484375
+Loss: 2.0234375
+Checkpoint 1 saved at ./my_saved_model_final/checkpoint_1
+Epoch: 1
+Loss: 1.875
+Loss: 1.65234375
+Loss: 1.3291015625
+Loss: 1.5556640625
+Loss: 1.419921875
+Loss: 1.5556640625
+Loss: 1.283203125
+Loss: 1.4951171875
+Loss: 1.4208984375
+Loss: 1.23046875
+Loss: 1.2578125
+Checkpoint 2 saved at ./my_saved_model_final/checkpoint_2
+Epoch: 2
+Loss: 1.2822265625
+Loss: 0.84619140625
+Loss: 1.1630859375
+Loss: 0.9228515625
+Loss: 0.88818359375
+Loss: 0.931640625
+Loss: 0.85595703125
+Loss: 0.85986328125
+Loss: 0.6767578125
+Loss: 0.8056640625
+Loss: 0.8134765625
+Checkpoint 3 saved at ./my_saved_model_final/checkpoint_3
+Epoch: 3
+Loss: 0.59619140625
+Loss: 0.7109375
+Loss: 0.64306640625
+Loss: 0.70947265625
+Loss: 0.57470703125
+Loss: 0.62548828125
+Loss: 0.67822265625
+Loss: 0.65380859375
+Loss: 0.4619140625
+Loss: 0.5107421875
+Loss: 0.5849609375
+Checkpoint 4 saved at ./my_saved_model_final/checkpoint_4
+Epoch: 4
+Loss: 0.38671875
+Loss: 0.74658203125
+Loss: 0.308349609375
+Loss: 0.393310546875
+Loss: 0.459716796875
+Loss: 0.436767578125
+Loss: 0.336669921875
+Loss: 0.5615234375
+Loss: 0.5400390625
+Loss: 0.3525390625
+Loss: 0.38037109375
+Checkpoint 5 saved at ./my_saved_model_final/checkpoint_5
+Epoch: 5
+Loss: 0.363037109375
+Loss: 0.3642578125
+Loss: 0.304931640625
+Loss: 0.442626953125
+Loss: 0.369140625
+Loss: 0.20654296875
+Loss: 0.388916015625
+Loss: 0.26611328125
+Loss: 0.396484375
+Loss: 0.2042236328125
+Loss: 0.170654296875
+Checkpoint 6 saved at ./my_saved_model_final/checkpoint_6
+Epoch: 6
+Loss: 0.2166748046875
+Loss: 0.2418212890625
+Loss: 0.431640625
+Loss: 0.237548828125
+Loss: 0.428466796875
+Loss: 0.18505859375
+Loss: 0.2470703125
+Loss: 0.11761474609375
+Loss: 0.2646484375
+Loss: 0.333740234375
+Loss: 0.202392578125
+Checkpoint 7 saved at ./my_saved_model_final/checkpoint_7
+Epoch: 7
+Loss: 0.1402587890625
+Loss: 0.2127685546875
+Loss: 0.232177734375
+Loss: 0.1500244140625
+Loss: 0.331787109375
+Loss: 0.307373046875
+Loss: 0.220703125
+Loss: 0.199462890625
+Loss: 0.26806640625
+Loss: 0.286865234375
+Loss: 0.23974609375
+Checkpoint 8 saved at ./my_saved_model_final/checkpoint_8
+Epoch: 8
+Loss: 0.218994140625
+Loss: 0.217041015625
+Loss: 0.31201171875
+Loss: 0.2435302734375
+Loss: 0.26025390625
+Loss: 0.1578369140625
+Loss: 0.28271484375
+Loss: 0.2012939453125
+Loss: 0.158203125
+Loss: 0.25
+Loss: 0.12066650390625
+Checkpoint 9 saved at ./my_saved_model_final/checkpoint_9
+Epoch: 9
+Loss: 0.180419921875
+Loss: 0.259033203125
+Loss: 0.1920166015625
+Loss: 0.1512451171875
+Loss: 0.24072265625
+Loss: 0.10888671875
+Loss: 0.10626220703125
+Loss: 0.2457275390625
+Loss: 0.1436767578125
+Loss: 0.18603515625
+Loss: 0.1773681640625
+Checkpoint 10 saved at ./my_saved_model_final/checkpoint_10
+Epoch: 10
+Loss: 0.12445068359375
+Loss: 0.1844482421875
+Loss: 0.12103271484375
+Loss: 0.177001953125
+Loss: 0.1856689453125
+Loss: 0.0863037109375
+Loss: 0.0933837890625
+Loss: 0.1285400390625
+Loss: 0.157470703125
+Loss: 0.139892578125
+Loss: 0.109619140625
+Checkpoint 11 saved at ./my_saved_model_final/checkpoint_11
+Epoch: 11
+Loss: 0.239501953125
+Loss: 0.11895751953125
+Loss: 0.242919921875
+Loss: 0.056182861328125
+Loss: 0.1318359375
+Loss: 0.1273193359375
+Loss: 0.13818359375
+Loss: 0.1903076171875
+Loss: 0.107421875
+Loss: 0.09075927734375
+Loss: 0.084228515625
+Checkpoint 12 saved at ./my_saved_model_final/checkpoint_12
+Epoch: 12
+Loss: 0.1300048828125
+Loss: 0.1270751953125
+Loss: 0.12164306640625
+Loss: 0.1474609375
+Loss: 0.1480712890625
+Loss: 0.174072265625
+Loss: 0.14501953125
+Loss: 0.11627197265625
+Loss: 0.1109619140625
+Loss: 0.1602783203125
+Loss: 0.08038330078125
+Checkpoint 13 saved at ./my_saved_model_final/checkpoint_13
+Epoch: 13
+Loss: 0.1295166015625
+Loss: 0.114013671875
+Loss: 0.09368896484375
+Loss: 0.10418701171875
+Loss: 0.0799560546875
+Loss: 0.07940673828125
+Loss: 0.14501953125
+Loss: 0.1402587890625
+Loss: 0.07672119140625
+Loss: 0.121826171875
+Loss: 0.125732421875
+Checkpoint 14 saved at ./my_saved_model_final/checkpoint_14
+Epoch: 14
+Loss: 0.09625244140625
+Loss: 0.11090087890625
+Loss: 0.11444091796875
+Loss: 0.09912109375
+Loss: 0.1038818359375
+Loss: 0.08740234375
+Loss: 0.04400634765625
+Loss: 0.054168701171875
+Loss: 0.1341552734375
+Loss: 0.10498046875
+Loss: 0.0865478515625
+Checkpoint 15 saved at ./my_saved_model_final/checkpoint_15
+Epoch: 15
+Loss: 0.10980224609375
+Loss: 0.1544189453125
+Loss: 0.09039306640625
+Loss: 0.09942626953125
+Loss: 0.132568359375
+Loss: 0.122314453125
+Loss: 0.055084228515625
+Loss: 0.0733642578125
+Loss: 0.1043701171875
+Loss: 0.10809326171875
+Loss: 0.04876708984375
+Checkpoint 16 saved at ./my_saved_model_final/checkpoint_16
+Epoch: 16
+Loss: 0.11376953125
+Loss: 0.04266357421875
+Loss: 0.10174560546875
+Loss: 0.0654296875
+Loss: 0.10516357421875
+Loss: 0.041351318359375
+Loss: 0.0887451171875
+Loss: 0.0576171875
+Loss: 0.0404052734375
+Loss: 0.0888671875
+Loss: 0.04718017578125
+Checkpoint 17 saved at ./my_saved_model_final/checkpoint_17
+Epoch: 17
+Loss: 0.07745361328125
+Loss: 0.0726318359375
+Loss: 0.11090087890625
+Loss: 0.044464111328125
+Loss: 0.039276123046875
+Loss: 0.071044921875
+Loss: 0.06195068359375
+Loss: 0.09832763671875
+Loss: 0.0615234375
+Loss: 0.03668212890625
+Loss: 0.1373291015625
+Checkpoint 18 saved at ./my_saved_model_final/checkpoint_18
+Epoch: 18
+Loss: 0.03192138671875
+Loss: 0.035064697265625
+Loss: 0.07958984375
+Loss: 0.07244873046875
+Loss: 0.08795166015625
+Loss: 0.0692138671875
+Loss: 0.054962158203125
+Loss: 0.0723876953125
+Loss: 0.0723876953125
+Loss: 0.06427001953125
+Loss: 0.0341796875
+Checkpoint 19 saved at ./my_saved_model_final/checkpoint_19
+Epoch: 19
+Loss: 0.06793212890625
+Loss: 0.039215087890625
+Loss: 0.052947998046875
+Loss: 0.08306884765625
+Loss: 0.04638671875
+Loss: 0.08209228515625
+Loss: 0.05450439453125
+Loss: 0.05859375
+Loss: 0.0254669189453125
+Loss: 0.069091796875
+Loss: 0.036468505859375
+Checkpoint 20 saved at ./my_saved_model_final/checkpoint_20
+Epoch: 20
+Loss: 0.0438232421875
+Loss: 0.04681396484375
+Loss: 0.07635498046875
+Loss: 0.035675048828125
+Loss: 0.049652099609375
+Loss: 0.05767822265625
+Loss: 0.05718994140625
+Loss: 0.0587158203125
+Loss: 0.08038330078125
+Loss: 0.0294647216796875
+Loss: 0.00772857666015625
+Checkpoint 21 saved at ./my_saved_model_final/checkpoint_21
+Epoch: 21
+Loss: 0.055999755859375
+Loss: 0.04302978515625
+Loss: 0.0306396484375
+Loss: 0.04736328125
+Loss: 0.038055419921875
+Loss: 0.0838623046875
+Loss: 0.02001953125
+Loss: 0.032684326171875
+Loss: 0.03448486328125
+Loss: 0.06317138671875
+Loss: 0.02996826171875
+Checkpoint 22 saved at ./my_saved_model_final/checkpoint_22
+Epoch: 22
+Loss: 0.0160675048828125
+Loss: 0.044830322265625
+Loss: 0.0177001953125
+Loss: 0.038970947265625
+Loss: 0.0382080078125
+Loss: 0.038543701171875
+Loss: 0.045867919921875
+Loss: 0.050201416015625
+Loss: 0.0421142578125
+Loss: 0.0299072265625
+Loss: 0.05596923828125
+Checkpoint 23 saved at ./my_saved_model_final/checkpoint_23
+Epoch: 23
+Loss: 0.036285400390625
+Loss: 0.047637939453125
+Loss: 0.0259552001953125
+Loss: 0.032135009765625
+Loss: 0.035400390625
+Loss: 0.0309600830078125
+Loss: 0.05828857421875
+Loss: 0.041595458984375
+Loss: 0.0294952392578125
+Loss: 0.0293731689453125
+Loss: 0.052947998046875
+Checkpoint 24 saved at ./my_saved_model_final/checkpoint_24
+Epoch: 24
+Loss: 0.045196533203125
+Loss: 0.034454345703125
+Loss: 0.059051513671875
+Loss: 0.039947509765625
+Loss: 0.052978515625
+Loss: 0.0261077880859375
+Loss: 0.031524658203125
+Loss: 0.034637451171875
+Loss: 0.02423095703125
+Loss: 0.041168212890625
+Loss: 0.041168212890625
+Checkpoint 25 saved at ./my_saved_model_final/checkpoint_25
+Epoch: 25
+Loss: 0.05816650390625
+Loss: 0.05755615234375
+Loss: 0.0322265625
+Loss: 0.023223876953125
+Loss: 0.040863037109375
+Loss: 0.039031982421875
+Loss: 0.037841796875
+Loss: 0.035980224609375
+Loss: 0.032684326171875
+Loss: 0.042266845703125
+Loss: 0.0184326171875
+Checkpoint 26 saved at ./my_saved_model_final/checkpoint_26
+Epoch: 26
+Loss: 0.03045654296875
+Loss: 0.0254974365234375
+Loss: 0.01490020751953125
+Loss: 0.028656005859375
+Loss: 0.0234375
+Loss: 0.031829833984375
+Loss: 0.023773193359375
+Loss: 0.030303955078125
+Loss: 0.0323486328125
+Loss: 0.038055419921875
+Loss: 0.024322509765625
+Checkpoint 27 saved at ./my_saved_model_final/checkpoint_27
+Epoch: 27
+Loss: 0.0209808349609375
+Loss: 0.0389404296875
+Loss: 0.036163330078125
+Loss: 0.035125732421875
+Loss: 0.02069091796875
+Loss: 0.033843994140625
+Loss: 0.027862548828125
+Loss: 0.038787841796875
+Loss: 0.042724609375
+Loss: 0.027587890625
+Loss: 0.01690673828125
+Checkpoint 28 saved at ./my_saved_model_final/checkpoint_28
+Epoch: 28
+Loss: 0.02386474609375
+Loss: 0.0264892578125
+Loss: 0.025909423828125
+Loss: 0.03497314453125
+Loss: 0.0185089111328125
+Loss: 0.0238037109375
+Loss: 0.046356201171875
+Loss: 0.036865234375
+Loss: 0.0275726318359375
+Loss: 0.043731689453125
+Loss: 0.01471710205078125
+Checkpoint 29 saved at ./my_saved_model_final/checkpoint_29
+Epoch: 29
+Loss: 0.029571533203125
+Loss: 0.014007568359375
+Loss: 0.031494140625
+Loss: 0.038604736328125
+Loss: 0.0227508544921875
+Loss: 0.0290985107421875
+Loss: 0.0275726318359375
+Loss: 0.0238800048828125
+Loss: 0.023406982421875
+Loss: 0.0202178955078125
+Loss: 0.0174713134765625
+Checkpoint 30 saved at ./my_saved_model_final/checkpoint_30
+Epoch: 30
+Loss: 0.01605224609375
+Loss: 0.01514434814453125
+Loss: 0.0269012451171875
+Loss: 0.0230255126953125
+Loss: 0.025604248046875
+Loss: 0.0201263427734375
+Loss: 0.024749755859375
+Loss: 0.03485107421875
+Loss: 0.036529541015625
+Loss: 0.0186920166015625
+Loss: 0.01105499267578125
+Checkpoint 31 saved at ./my_saved_model_final/checkpoint_31
+Epoch: 31
+Loss: 0.032379150390625
+Loss: 0.0294952392578125
+Loss: 0.0119476318359375
+Loss: 0.00917816162109375
+Loss: 0.01207733154296875
+Loss: 0.020355224609375
+Loss: 0.017730712890625
+Loss: 0.0247802734375
+Loss: 0.0254974365234375
+Loss: 0.02764892578125
+Loss: 0.0223388671875
+Checkpoint 32 saved at ./my_saved_model_final/checkpoint_32
+Epoch: 32
+Loss: 0.02044677734375
+Loss: 0.0238037109375
+Loss: 0.0204010009765625
+Loss: 0.0295257568359375
+Loss: 0.033599853515625
+Loss: 0.0301971435546875
+Loss: 0.015716552734375
+Loss: 0.0255279541015625
+Loss: 0.0081939697265625
+Loss: 0.033599853515625
+Loss: 0.0203704833984375
+Checkpoint 33 saved at ./my_saved_model_final/checkpoint_33
+Epoch: 33
+Loss: 0.0260162353515625
+Loss: 0.0182342529296875
+Loss: 0.004638671875
+Loss: 0.033782958984375
+Loss: 0.0262298583984375
+Loss: 0.0209197998046875
+Loss: 0.02532958984375
+Loss: 0.02764892578125
+Loss: 0.021697998046875
+Loss: 0.0235443115234375
+Loss: 0.032501220703125
+Checkpoint 34 saved at ./my_saved_model_final/checkpoint_34
+Epoch: 34
+Loss: 0.0192108154296875
+Loss: 0.01934814453125
+Loss: 0.01629638671875
+Loss: 0.0254058837890625
+Loss: 0.0323486328125
+Loss: 0.052734375
+Loss: 0.0288238525390625
+Loss: 0.0222320556640625
+Loss: 0.050506591796875
+Loss: 0.021697998046875
+Loss: 0.017364501953125
+Checkpoint 35 saved at ./my_saved_model_final/checkpoint_35
+Epoch: 35
+Loss: 0.025787353515625
+Loss: 0.0235748291015625
+Loss: 0.0272369384765625
+Loss: 0.0298919677734375
+Loss: 0.0246124267578125
+Loss: 0.043182373046875
+Loss: 0.036712646484375
+Loss: 0.033294677734375
+Loss: 0.0259552001953125
+Loss: 0.010162353515625
+Loss: 0.0240936279296875
+Checkpoint 36 saved at ./my_saved_model_final/checkpoint_36
+Epoch: 36
+Loss: 0.031829833984375
+Loss: 0.028961181640625
+Loss: 0.0163421630859375
+Loss: 0.017547607421875
+Loss: 0.033447265625
+Loss: 0.0284881591796875
+Loss: 0.026611328125
+Loss: 0.01117706298828125
+Loss: 0.03173828125
+Loss: 0.0209197998046875
+Loss: 0.035919189453125
+Checkpoint 37 saved at ./my_saved_model_final/checkpoint_37
+Epoch: 37
+Loss: 0.0290374755859375
+Loss: 0.0257110595703125
+Loss: 0.0172271728515625
+Loss: 0.0197296142578125
+Loss: 0.005580902099609375
+Loss: 0.0145263671875
+Loss: 0.0274505615234375
+Loss: 0.0308837890625
+Loss: 0.017608642578125
+Loss: 0.01529693603515625
+Loss: 0.009552001953125
+Checkpoint 38 saved at ./my_saved_model_final/checkpoint_38
+Epoch: 38
+Loss: 0.02655029296875
+Loss: 0.01171875
+Loss: 0.01009368896484375
+Loss: 0.02734375
+Loss: 0.0164642333984375
+Loss: 0.0223541259765625
+Loss: 0.0214385986328125
+Loss: 0.025634765625
+Loss: 0.00984954833984375
+Loss: 0.0298309326171875
+Loss: 0.0078887939453125
+Checkpoint 39 saved at ./my_saved_model_final/checkpoint_39
+Epoch: 39
+Loss: 0.019805908203125
+Loss: 0.0107879638671875
+Loss: 0.01275634765625
+Loss: 0.01751708984375
+Loss: 0.0241546630859375
+Loss: 0.023651123046875
+Loss: 0.026885986328125
+Loss: 0.0192413330078125
+Loss: 0.019134521484375
+Loss: 0.007495880126953125
+Loss: 0.00724029541015625
+Checkpoint 40 saved at ./my_saved_model_final/checkpoint_40
+Epoch: 40
+Loss: 0.013031005859375
+Loss: 0.0193328857421875
+Loss: 0.01256561279296875
+Loss: 0.01375579833984375
+Loss: 0.0128021240234375
+Loss: 0.01503753662109375
+Loss: 0.0121002197265625
+Loss: 0.013519287109375
+Loss: 0.0167083740234375
+Loss: 0.0176849365234375
+Loss: 0.0146942138671875
+Checkpoint 41 saved at ./my_saved_model_final/checkpoint_41
+Epoch: 41
+Loss: 0.007434844970703125
+Loss: 0.01136016845703125
+Loss: 0.01922607421875
+Loss: 0.0144805908203125
+Loss: 0.018280029296875
+Loss: 0.01552581787109375
+Loss: 0.01110076904296875
+Loss: 0.01202392578125
+Loss: 0.01351165771484375
+Loss: 0.0166168212890625
+Loss: 0.01372528076171875
+Checkpoint 42 saved at ./my_saved_model_final/checkpoint_42
+Epoch: 42
+Loss: 0.0166015625
+Loss: 0.0185089111328125
+Loss: 0.01299285888671875
+Loss: 0.01007843017578125
+Loss: 0.017333984375
+Loss: 0.01103973388671875
+Loss: 0.0132904052734375
+Loss: 0.0153961181640625
+Loss: 0.0164031982421875
+Loss: 0.0027294158935546875
+Loss: 0.01166534423828125
+Checkpoint 43 saved at ./my_saved_model_final/checkpoint_43
+Epoch: 43
+Loss: 0.022491455078125
+Loss: 0.013427734375
+Loss: 0.0179290771484375
+Loss: 0.0102691650390625
+Loss: 0.00658416748046875
+Loss: 0.008941650390625
+Loss: 0.01450347900390625
+Loss: 0.01384735107421875
+Loss: 0.01496124267578125
+Loss: 0.006591796875
+Loss: 0.0087432861328125
+Checkpoint 44 saved at ./my_saved_model_final/checkpoint_44
+Epoch: 44
+Loss: 0.0137939453125
+Loss: 0.01043701171875
+Loss: 0.0129852294921875
+Loss: 0.01004791259765625
+Loss: 0.01148223876953125
+Loss: 0.022430419921875
+Loss: 0.01081085205078125
+Loss: 0.0169219970703125
+Loss: 0.00821685791015625
+Loss: 0.02001953125
+Loss: 0.0078277587890625
+Checkpoint 45 saved at ./my_saved_model_final/checkpoint_45
+Epoch: 45
+Loss: 0.007659912109375
+Loss: 0.01200103759765625
+Loss: 0.00865936279296875
+Loss: 0.00963592529296875
+Loss: 0.0143890380859375
+Loss: 0.01251983642578125
+Loss: 0.0025081634521484375
+Loss: 0.01641845703125
+Loss: 0.0130615234375
+Loss: 0.0153656005859375
+Loss: 0.0077056884765625
+Checkpoint 46 saved at ./my_saved_model_final/checkpoint_46
+Epoch: 46
+Loss: 0.01373291015625
+Loss: 0.00225830078125
+Loss: 0.0122222900390625
+Loss: 0.01157379150390625
+Loss: 0.016357421875
+Loss: 0.00439453125
+Loss: 0.00926971435546875
+Loss: 0.0085296630859375
+Loss: 0.0183868408203125
+Loss: 0.0178985595703125
+Loss: 0.007167816162109375
+Checkpoint 47 saved at ./my_saved_model_final/checkpoint_47
+Epoch: 47
+Loss: 0.00782012939453125
+Loss: 0.0104827880859375
+Loss: 0.00888824462890625
+Loss: 0.01291656494140625
+Loss: 0.0164337158203125
+Loss: 0.00920867919921875
+Loss: 0.01334381103515625
+Loss: 0.00821685791015625
+Loss: 0.01074981689453125
+Loss: 0.017669677734375
+Loss: 0.007114410400390625
+Checkpoint 48 saved at ./my_saved_model_final/checkpoint_48
+Epoch: 48
+Loss: 0.0079193115234375
+Loss: 0.01219940185546875
+Loss: 0.01305389404296875
+Loss: 0.01323699951171875
+Loss: 0.015228271484375
+Loss: 0.01568603515625
+Loss: 0.004894256591796875
+Loss: 0.0081787109375
+Loss: 0.0079803466796875
+Loss: 0.0159454345703125
+Loss: 0.006641387939453125
+Checkpoint 49 saved at ./my_saved_model_final/checkpoint_49
+Epoch: 49
+Loss: 0.0103912353515625
+Loss: 0.01084136962890625
+Loss: 0.01209259033203125
+Loss: 0.004871368408203125
+Loss: 0.01361083984375
+Loss: 0.00969696044921875
+Loss: 0.01360321044921875
+Loss: 0.00970458984375
+Loss: 0.01113128662109375
+Loss: 0.00891876220703125
+Loss: 0.006343841552734375
+Checkpoint 50 saved at ./my_saved_model_final/checkpoint_50
+Final model and processor saved at ./my_saved_model_final
