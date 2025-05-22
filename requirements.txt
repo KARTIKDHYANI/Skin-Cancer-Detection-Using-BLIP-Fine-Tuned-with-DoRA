@@ -1,0 +1,8 @@
+torch
+transformers
+datasets
+nltk
+rouge-score
+pycocoevalcap
+Pillow
+gradio
