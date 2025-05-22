@@ -7,36 +7,45 @@ from peft import PeftModel
 # Step 1: Load the base BLIP-2 model
 base_model = Blip2ForConditionalGeneration.from_pretrained("Salesforce/blip2-opt-2.7b")
 
-# Step 2: Load the adapter weights
-model = PeftModel.from_pretrained(base_model,"BLIP_finetuned_dora_r16_final/best_checkpoint")
-# Load the model and processor
-processor = AutoProcessor.from_pretrained("BLIP_finetuned_dora_r16_final/best_checkpoint")
+# Step 2: Load the adapter weights (fine-tuned checkpoint)
+model = PeftModel.from_pretrained(base_model, "BLIP_finetuned_dora_r16_final/best_checkpoint")
 
+# IMPORTANT: Use the processor from the base model, not the adapter
+processor = AutoProcessor.from_pretrained("Salesforce/blip2-opt-2.7b")
+
+# Set device
 device = "cuda" if torch.cuda.is_available() else "cpu"
 model.to(device)
 model.eval()
 
+# Caption generation function
 def generate_caption(image, max_length, temperature, top_k):
     if not isinstance(image, Image.Image):
         image = Image.fromarray(image)
 
-    # Prepare image for the model
-    inputs = processor(images=image, return_tensors="pt").to(device, torch.float16)
-    pixel_values = inputs.pixel_values
+    if image.mode != "RGB":
+        image = image.convert("RGB")
 
-    # Generate caption with adjustable parameters
+    prompt = "a medical image of"  # or just "" for generic
+
+    # Preprocess image and prompt
+    inputs = processor(images=image, text=prompt, return_tensors="pt").to(device, torch.float16)
+
+    # Generate caption
     generated_ids = model.generate(
-        pixel_values=pixel_values, 
-        max_new_tokens=max_length,  # Use max_new_tokens instead of max_length
-        temperature=temperature, 
+        pixel_values=inputs["pixel_values"],
+        input_ids=inputs["input_ids"],
+        attention_mask=inputs["attention_mask"],
+        max_new_tokens=max_length,
+        temperature=temperature,
         top_k=top_k,
         do_sample=True
     )
     generated_caption = processor.batch_decode(generated_ids, skip_special_tokens=True)[0]
-    
-    return image, generated_caption  # Return image and caption separately
 
-# Define the Gradio interface
+    return image, generated_caption
+
+# Gradio Interface
 iface = gr.Interface(
     fn=generate_caption,
     inputs=[
@@ -46,12 +55,12 @@ iface = gr.Interface(
         gr.Slider(0, 100, value=50, step=5, label="Top-k Sampling")
     ],
     outputs=[
-        gr.Image(label="Uploaded Image"),  # Display original image
-        gr.Textbox(label="Generated Caption")  # Display caption separately
+        gr.Image(label="Uploaded Image"),
+        gr.Textbox(label="Generated Caption")
     ],
     title="Skin Cancer Diagnosis",
-    description="Upload an image and adjust parameters to fine-tune the caption generation."
+    description="Upload a skin lesion image and adjust parameters to generate a medical caption."
 )
 
-# Launch the Gradio app
+# Launch the app
 iface.launch(share=True)
